@@ -24,15 +24,15 @@ const Login = () => {
 
     return(
         <div className="container container2">
-            <form className="margin box box-shadow text-dark" onSubmit={Submit}>
+            <form className="margin box box-shadow text-dark" style={{"paddingBottom":"40px"}} onSubmit={Submit}>
                 <h1 className="box-title">Login user</h1>
                 <h4 className="form-error">{error}</h4>
                 <div className="form-group">
-                    <p className="form-label">Email:</p>
+                    <p className="form-label" style={{textAlign: 'left'}}>Email</p>
                     <input type="email" className="form-control" value={inputEmail} onChange = {({target: {value}}) => setInputEmail(value)} />
                 </div>
                 <div className="form-group">
-                    <p className="form-label">Password:</p>
+                    <p className="form-label" style={{textAlign: 'left'}}>Password</p>
                     <input type="password" className="form-control" value={inputPassword} onChange= {({target: {value}}) => setInputPassword(value)} />
                 </div>
                 <div className="form-group">

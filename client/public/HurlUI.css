@@ -10,8 +10,8 @@ body{
 	/* font-family: "Times New Roman","Roboto Condensed", "Poppins","Arial"; */
 	font-family: 'Roboto', sans-serif;
 	font-family: 'Ubuntu', sans-serif;
-	background-color: whitesmoke;
-	/* background: linear-gradient(45deg,rgb(249, 246, 238),yellow); */
+	/* background-color: whitesmoke; */
+	background: linear-gradient(45deg,white,whitesmoke);
 }
 
 .center{
@@ -140,7 +140,7 @@ body[theme="light"]{
 
 .box{
 	padding: 10px;
-	border: 1px solid blue;
+	border: 1px solid red;
 	border-radius: 5px;
 	width: 60%;
 	margin: auto;
@@ -180,7 +180,7 @@ body[theme="light"]{
 
 .form-control{
 	color: black;
-	border: 1px solid blue;
+	border: 1px solid black;
 	width: -webkit-fill-available;
 	border-radius: 5px;
 	padding: 8px;
