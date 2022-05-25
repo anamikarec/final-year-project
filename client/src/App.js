@@ -1,7 +1,13 @@
-import React from "react";
+import React,{useEffect, useState} from "react";
 import Routes from "./Routes";
 
-const App = () => (
+const App = () => {
+    let [auth,setAuth] = useState(false);
+    useEffect(()=>{
+        setAuth(JSON.parse(localStorage.getItem("auth")))
+    },[])
+    
+    return <>
    <div>
         <div style={{ width: "100%", display: "flex", flexWrap:"wrap", gap:"2rem",alignItems:"center", justifyContent: "center",borderBottom: "1px solid white", background: "linear-gradient(45deg,black,blue)"}}>
            <div style={{ marginLeft: "30px"}}>
@@ -21,11 +27,11 @@ const App = () => (
                <a href="http://localhost:3000/" style={{ textDecoration: "none", color:"white"}}>iLearn</a>
            </div>
            <div>
-               <a href="http://localhost:3000/login" style={{ textDecoration: "none", color:"white"}}>Login / Register</a>
+               <a href={auth ? "http://localhost:3000/logout":"http://localhost:3000/login" }style={{ textDecoration: "none", color:"white"}}>{auth ? "Logout" : "Login / Register"}</a>
            </div>
        </div>
        <Routes />
    </div>
-)
-
+   </>
+}
 export default App;

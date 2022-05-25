@@ -17,6 +17,7 @@ const Login = () => {
             const token = new Cookies();
             token.set('token', res.data.token, {path: '/', maxAge:604800 })
             //return to home page
+            localStorage.setItem("auth","true");
             window.location = "/";
         })
         .catch(() => setError("Something went wrong. Please try again."))
