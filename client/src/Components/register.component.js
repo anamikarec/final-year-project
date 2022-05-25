@@ -44,8 +44,8 @@ const Register = () => {
     return (
         <div className="container container2">
             <form className="margin box box-shadow text-dark" onSubmit={Submit}>
-                <h1 className="box-title">Register user</h1>
-                <h4 className="form-error">{error}</h4>
+                <h2 className="box-title">Register user</h2>
+                <p className="form-error" style={{fontFamily: "'Roboto', sans-serif"}}>{error}</p>
                 <div className="form-group">
                     <p className="form-label" style={{textAlign: 'left'}}>Username</p>
                     <input type="text" className="form-control" value={inputUsername} onChange={({target: {value}}) => setInputUsername(value)} />

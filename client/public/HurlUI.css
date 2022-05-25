@@ -64,7 +64,8 @@ body{
 }
 .bg-dark, .btn-dark{
 	/* background-color: #1c1e1f !important; */
-	background-color: rgb(48, 48, 189) !important;
+	/* background-color: rgb(48, 48, 189) !important; */
+	background-color: rgb(33,150,242) !important;
 	color: #FFF !important;
 }
 
@@ -140,12 +141,12 @@ body[theme="light"]{
 
 .box{
 	padding: 10px;
-	border: 1px solid red;
+	border: 1px solid grey;
 	border-radius: 5px;
 	width: 60%;
 	margin: auto;
 	margin-top: 20px;
-	background-color: white;
+	background-color: #F1F1F1;
 	padding-bottom: 30px;
 }
 
@@ -155,9 +156,9 @@ body[theme="light"]{
 .box-title, .heading-title{
 	font-weight: bold;
 	text-align: center;
-	font-family: "Montserrat";
+	/* font-family: "Montserrat"; */
 	padding: 2px 5px;
-	border-bottom: 0.5px solid #e6e6e6; 
+	border-bottom: 1px solid grey; 
 }
 
 .box-text{

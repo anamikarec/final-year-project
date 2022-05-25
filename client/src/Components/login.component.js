@@ -25,7 +25,7 @@ const Login = () => {
     return(
         <div className="container container2">
             <form className="margin box box-shadow text-dark" style={{"paddingBottom":"40px"}} onSubmit={Submit}>
-                <h1 className="box-title">Login user</h1>
+                <h2 className="box-title">Login to your account</h2>
                 <h4 className="form-error">{error}</h4>
                 <div className="form-group">
                     <p className="form-label" style={{textAlign: 'left'}}>Email</p>
@@ -36,7 +36,7 @@ const Login = () => {
                     <input type="password" className="form-control" value={inputPassword} onChange= {({target: {value}}) => setInputPassword(value)} />
                 </div>
                 <div className="form-group">
-                    <p className = "form-label">Don't have account yet? <NavLink to="/register" className="link">Register</NavLink></p>
+                    <p className = "form-label">Don't have account yet? <NavLink to="/register" className="link" style={{color: 'rgb(2,141,223)'}}>Register</NavLink></p>
                 </div>
                 <div className="form-group">
                     <input type="submit"  className="form-control btn btn-dark" />
